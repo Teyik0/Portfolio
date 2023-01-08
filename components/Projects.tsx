@@ -4,12 +4,14 @@ import ProjectItem from './ProjectItem';
 
 const Projects = () => {
   const [options, setOptions] = useState(0);
-  const [selected, setSelected] = useState(0);
   return (
     <section
       id='skill-section'
-      className='relative flex flex-col h-[100vh] bg-[#181818] justify-center'
+      className='relative flex flex-col h-[100vh] justify-center'
     >
+      <h1 className='lg:hidden uppercase text-center text-white text-5xl absolute top-8 w-full'>
+        Projects
+      </h1>
       <ul
         className='absolute bottom-[3vh] text-white w-full flex flex-row flex-wrap justify-center 
       lg:text-[3vh]'
@@ -22,7 +24,6 @@ const Projects = () => {
             } rounded-full ml-8 cursor-pointer`}
             onClick={() => {
               setOptions(0);
-              //   setSelected();
             }}
           />
         </li>
@@ -34,7 +35,6 @@ const Projects = () => {
             } rounded-full ml-8 cursor-pointer`}
             onClick={() => {
               setOptions(1);
-              //   setSelected(devLogos);
             }}
           />
         </li>
@@ -46,28 +46,48 @@ const Projects = () => {
             } rounded-full ml-8 cursor-pointer`}
             onClick={() => {
               setOptions(2);
-              //   setSelected(elecLogos);
             }}
           />
         </li>
       </ul>
-      <Encadre />
       <div className='lg:p-[12vh] flex flex-wrap gap-8 justify-center'>
-        <ProjectItem
-          name='Project1'
-          category='test'
-          cover="bg-[url('/img/ecommerce/im1.png')]"
-        />
-        <ProjectItem
-          name='Project1'
-          category='test'
-          cover="bg-[url('/img/ecommerce/im1.png')]"
-        />
-        <ProjectItem
-          name='Project1'
-          category='test'
-          cover="bg-[url('/img/ecommerce/im1.png')]"
-        />
+        {options === 0 && (
+          <>
+            <ProjectItem
+              name='Portfolio 1.0'
+              category='test'
+              cover="bg-[url('/img/siteweb/sitewebtheo.png')]"
+            />
+            <ProjectItem
+              name='Srika Store'
+              category='test'
+              cover="bg-[url('/img/ecommerce/im1.png')]"
+            />
+          </>
+        )}
+        {options === 1 && (
+          <>
+            <ProjectItem
+              name='Robot Suiveur'
+              category='test'
+              cover="bg-[url('/img/robot_suiveur/robotsuiveur.png')]"
+            />
+            <ProjectItem
+              name='Laser automatique pour chat'
+              category='test'
+              cover="bg-[url('/img/laser_chat/laserchat.png')]"
+            />
+          </>
+        )}
+        {options === 2 && (
+          <>
+            <ProjectItem
+              name='ListX - Base de donnée utilisateur'
+              category='test'
+              cover="bg-[url('/img/listx/listx.png')]"
+            />
+          </>
+        )}
       </div>
     </section>
   );

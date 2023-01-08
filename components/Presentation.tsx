@@ -1,5 +1,4 @@
 /* eslint-disable @next/next/no-img-element */
-import { BsFacebook, BsInstagram, BsLinkedin } from 'react-icons/bs';
 import Encadre from './Encadre';
 
 const Presentation = () => {
@@ -8,8 +7,6 @@ const Presentation = () => {
       id='skill-section'
       className='flex flex-col lg:flex-row h-[100vh] justify-center items-center p-8 lg:p-0'
     >
-      <Encadre />
-
       <div
         className='flex flex-col lg:flex-row w-full md:justify-center
        lg:justify-evenly items-center mt-[3rem]'

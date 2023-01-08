@@ -10,10 +10,11 @@ const Skills = () => {
   return (
     <section
       id='skill-section'
-      className='relative flex flex-col h-[100vh] bg-[#222222] justify-center'
+      className='relative flex flex-col h-[100vh] justify-center'
     >
-      <Encadre />
-
+      <h1 className='lg:hidden uppercase text-center text-white text-5xl absolute top-8 w-full'>
+        Skills
+      </h1>
       <ul
         className='absolute bottom-[3vh] text-white w-full flex flex-row flex-wrap justify-center 
       lg:text-[3vh]'

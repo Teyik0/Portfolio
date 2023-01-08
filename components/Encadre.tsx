@@ -1,6 +1,6 @@
 import { BsFacebook, BsInstagram, BsLinkedin } from 'react-icons/bs';
 
-const Encadre = () => {
+const Encadre = ({ page, setPage }: any) => {
   return (
     <>
       <div className='absolute top-[1rem] lg:top-[16vh] left-8 lg:left-[4vh] pt-[4vh]'>
@@ -26,21 +26,41 @@ const Encadre = () => {
       />
       <div
         className='text-white text-3xl lg:text-[3vh] lg:flex lg:flex-row lg:absolute lg:top-[6vh] lg:right-[24vh] 
-      w-[600px] justify-evenly hidden'
+      w-[600px] justify-evenly hidden z-40'
       >
-        <h3 className='hover:text-blue-500 duration-500 cursor-pointer'>
+        <h3
+          className={`hover:text-[#775e28] duration-500 cursor-pointer 
+           ${page === 0 && 'text-[#775e28]'}`}
+          onClick={() => setPage(0)}
+        >
           Home
         </h3>
-        <h3 className='hover:text-blue-500 duration-500 cursor-pointer'>
+        <h3
+          className={`hover:text-[#775e28] duration-500 cursor-pointer 
+          ${page === 1 && 'text-[#775e28]'}`}
+          onClick={() => setPage(1)}
+        >
           Skills
         </h3>
-        <h3 className='hover:text-blue-500 duration-500 cursor-pointer'>
+        <h3
+          className={`hover:text-[#775e28] duration-500 cursor-pointer 
+          ${page === 2 && 'text-[#775e28]'}`}
+          onClick={() => setPage(2)}
+        >
           Portfolio
         </h3>
-        <h3 className='hover:text-blue-500 duration-500 cursor-pointer'>
-          Parcours
+        <h3
+          className={`hover:text-[#775e28] duration-500 cursor-pointer 
+          ${page === 3 && 'text-[#775e28]'}`}
+          onClick={() => setPage(3)}
+        >
+          Experiences
         </h3>
-        <h3 className='hover:text-blue-500 duration-500 cursor-pointer'>
+        <h3
+          className={`hover:text-[#775e28] duration-500 cursor-pointer 
+          ${page === 4 && 'text-[#775e28]'}`}
+          onClick={() => setPage(4)}
+        >
           About
         </h3>
       </div>
