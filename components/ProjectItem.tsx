@@ -1,19 +1,22 @@
 /* eslint-disable @next/next/no-img-element */
 import Image from 'next/image';
+import Link from 'next/link';
 import React, { useState } from 'react';
 
 interface IProps {
   name: string;
   category: string;
   cover: string;
+  link: string;
 }
 
-const ProjectItem = ({ name, category, cover }: IProps) => {
+const ProjectItem = ({ name, category, cover, link }: IProps) => {
   const [hover, setHover] = useState(false);
   return (
-    <div
-      id='project-section'
-      className={`h-[20vh] w-[40vh] lg:h-[35vh] lg:w-[70vh] 
+    <Link href={link} target='_blank'>
+      <div
+        id='project-section'
+        className={`h-[20vh] w-[40vh] lg:h-[20vh] lg:w-[40vh] 
       rounded-3xl cursor-pointer flex justify-center items-center
     ${cover} bg-cover bg-center bg-no-repeat
     ease-in-out duration-500 overflow-hidden relative z-0 hover:scale-110
@@ -26,23 +29,24 @@ const ProjectItem = ({ name, category, cover }: IProps) => {
     hover:after:translate-x-0 hover:after:z-40 hover:after:absolute hover:after:uppercase
     after:font-bold after:tracking-wider
     `}
-      onMouseOverCapture={() => setHover(true)}
-      onMouseOutCapture={() => setHover(false)}
-    >
-      {hover && (
-        <img
-          src='/img/ajouter.png'
-          alt='en savoir plus'
-          className='h-[100px] w-[100px] md:h-[10vh] md:w-[10vh] p-4'
-        />
-      )}
-      <h2
-        className='absolute bottom-0 right-0 p-2 bg-gray-800 rounded-l-full text-white uppercase tracking-widest
-      lg:text-base sm:text-[10px] text-[8px]'
+        onMouseOverCapture={() => setHover(true)}
+        onMouseOutCapture={() => setHover(false)}
       >
-        {name}
-      </h2>
-    </div>
+        {hover && (
+          <img
+            src='/img/ajouter.png'
+            alt='en savoir plus'
+            className='h-[100px] w-[100px] md:h-[10vh] md:w-[10vh] p-4'
+          />
+        )}
+        <h2
+          className='absolute bottom-0 right-0 p-2 bg-gray-800 rounded-l-full text-white uppercase tracking-widest
+      lg:text-[1.5vh] sm:text-[10px] text-[8px]'
+        >
+          {name}
+        </h2>
+      </div>
+    </Link>
   );
 };
 

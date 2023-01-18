@@ -51,14 +51,22 @@ const Projects = () => {
         {options === 0 && (
           <>
             <ProjectItem
-              name='Portfolio 1.0'
+              name='Krypt - (Crypto Goerli Testnet)'
               category='test'
-              cover="bg-[url('/img/siteweb/sitewebtheo.png')]"
+              cover="bg-[url('/img/Web3-0.png')]"
+              link='https://kryptongoerli.netlify.app/'
             />
             <ProjectItem
               name='Srika Store'
               category='test'
               cover="bg-[url('/img/ecommerce/im1.png')]"
+              link='https://youtu.be/ecVZBJZusk0'
+            />
+            <ProjectItem
+              name='Indian Coffee'
+              category='test'
+              cover="bg-[url('/img/Indian-Coffe.png')]"
+              link='https://indian-coffee.netlify.app/'
             />
           </>
         )}
@@ -68,11 +76,13 @@ const Projects = () => {
               name='Robot Suiveur'
               category='test'
               cover="bg-[url('/img/robot_suiveur/robotsuiveur.png')]"
+              link=''
             />
             <ProjectItem
               name='Laser automatique pour chat'
               category='test'
               cover="bg-[url('/img/laser_chat/laserchat.png')]"
+              link=''
             />
           </>
         )}
@@ -82,6 +92,13 @@ const Projects = () => {
               name='ListX - Base de donnée utilisateur'
               category='test'
               cover="bg-[url('/img/listx/listx.png')]"
+              link=''
+            />
+            <ProjectItem
+              name='Epitact App - React Native'
+              category='test'
+              cover="bg-[url('/img/listx/listx.png')]"
+              link=''
             />
           </>
         )}
