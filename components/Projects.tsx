@@ -10,7 +10,7 @@ const Projects = () => {
         Projects
       </h1>
       <ul
-        className='absolute bottom-[3vh] text-white w-full flex flex-row flex-wrap justify-center 
+        className='absolute bottom-[1vh] text-white w-full flex flex-row flex-wrap justify-center 
       lg:text-[3vh]'
       >
         <li className='flex items-center mb-4 lg:mb-0 mr-4 ml-4'>

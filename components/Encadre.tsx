@@ -56,35 +56,50 @@ const Encadre = ({ page, setPage }: any) => {
         <h3
           className={`hover:text-[#775e28] duration-500 cursor-pointer mr-4 
            ${page === 0 && 'text-[#775e28]'}`}
-          onClick={() => setPage(0)}
+          onClick={() => {
+            setPage(0);
+            setMenu(false);
+          }}
         >
           Home
         </h3>
         <h3
           className={`hover:text-[#775e28] duration-500 cursor-pointer mr-4
           ${page === 1 && 'text-[#775e28]'}`}
-          onClick={() => setPage(1)}
+          onClick={() => {
+            setPage(1);
+            setMenu(false);
+          }}
         >
           Skills
         </h3>
         <h3
           className={`hover:text-[#775e28] duration-500 cursor-pointer mr-4
           ${page === 2 && 'text-[#775e28]'}`}
-          onClick={() => setPage(2)}
+          onClick={() => {
+            setPage(2);
+            setMenu(false);
+          }}
         >
           Portfolio
         </h3>
         <h3
           className={`hover:text-[#775e28] duration-500 cursor-pointer mr-4
           ${page === 3 && 'text-[#775e28]'}`}
-          onClick={() => setPage(3)}
+          onClick={() => {
+            setPage(3);
+            setMenu(false);
+          }}
         >
           Experiences
         </h3>
         <h3
           className={`hover:text-[#775e28] duration-500 cursor-pointer 
           ${page === 4 && 'text-[#775e28]'}`}
-          onClick={() => setPage(4)}
+          onClick={() => {
+            setPage(4);
+            setMenu(false);
+          }}
         >
           Contact
         </h3>
@@ -104,35 +119,50 @@ const Encadre = ({ page, setPage }: any) => {
             <h3
               className={`hover:text-[#775e28] duration-500 cursor-pointer
            ${page === 0 && 'text-[#775e28] pl-6 pt-2 pb-2'}`}
-              onClick={() => setPage(0)}
+              onClick={() => {
+                setPage(0);
+                setMenu(false);
+              }}
             >
               Home
             </h3>
             <h3
               className={`hover:text-[#775e28] duration-500 cursor-pointer 
           ${page === 1 && 'text-[#775e28] pl-6 pt-2 pb-2'}`}
-              onClick={() => setPage(1)}
+              onClick={() => {
+                setPage(1);
+                setMenu(false);
+              }}
             >
               Skills
             </h3>
             <h3
               className={`hover:text-[#775e28] duration-500 cursor-pointer 
           ${page === 2 && 'text-[#775e28] pl-6 pt-2 pb-2'}`}
-              onClick={() => setPage(2)}
+              onClick={() => {
+                setPage(2);
+                setMenu(false);
+              }}
             >
               Portfolio
             </h3>
             <h3
               className={`hover:text-[#775e28] duration-500 cursor-pointer 
           ${page === 3 && 'text-[#775e28] pl-6 pt-2 pb-2'}`}
-              onClick={() => setPage(3)}
+              onClick={() => {
+                setPage(3);
+                setMenu(false);
+              }}
             >
               Experiences
             </h3>
             <h3
               className={`hover:text-[#775e28] duration-500 cursor-pointer 
           ${page === 4 && 'text-[#775e28] pl-6 pt-2 pb-2'}`}
-              onClick={() => setPage(4)}
+              onClick={() => {
+                setPage(4);
+                setMenu(false);
+              }}
             >
               Contact
             </h3>
