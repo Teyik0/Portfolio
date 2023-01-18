@@ -5,10 +5,7 @@ import ProjectItem from './ProjectItem';
 const Projects = () => {
   const [options, setOptions] = useState(0);
   return (
-    <section
-      id='skill-section'
-      className='relative flex flex-col h-[100vh] justify-center'
-    >
+    <section className='relative flex flex-col h-[100vh] justify-center'>
       <h1 className='lg:hidden uppercase text-center text-white text-5xl absolute top-8 w-full'>
         Projects
       </h1>

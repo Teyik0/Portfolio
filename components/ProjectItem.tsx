@@ -13,7 +13,7 @@ const ProjectItem = ({ name, category, cover }: IProps) => {
   return (
     <div
       id='project-section'
-      className={`h-[150px] w-[250px] sm:h-[200px] sm:w-[300px] lg:h-[35vh] lg:w-[70vh] 
+      className={`h-[20vh] w-[40vh] lg:h-[35vh] lg:w-[70vh] 
       rounded-3xl cursor-pointer flex justify-center items-center
     ${cover} bg-cover bg-center bg-no-repeat
     ease-in-out duration-500 overflow-hidden relative z-0 hover:scale-110

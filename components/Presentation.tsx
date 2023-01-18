@@ -3,10 +3,7 @@ import Encadre from './Encadre';
 
 const Presentation = () => {
   return (
-    <section
-      id='skill-section'
-      className='flex flex-col lg:flex-row h-[100vh] justify-center items-center p-8 lg:p-0'
-    >
+    <section className='flex flex-col lg:flex-row h-[100vh] justify-center items-center p-8 lg:p-0'>
       <div
         className='flex flex-col lg:flex-row w-full md:justify-center
        lg:justify-evenly items-center mt-[3rem]'
