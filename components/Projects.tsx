@@ -97,8 +97,8 @@ const Projects = () => {
             <ProjectItem
               name='Epitact App - React Native'
               category='test'
-              cover="bg-[url('/img/listx/listx.png')]"
-              link=''
+              cover="bg-[url('/img/Epitact.jpg')]"
+              link='https://youtube.com/shorts/e7I4HjtPEDA?feature=share'
             />
           </>
         )}
