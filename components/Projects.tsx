@@ -66,7 +66,7 @@ const Projects = () => {
               name='Indian Coffee'
               category='test'
               cover="bg-[url('/img/Indian-Coffe.png')]"
-              link='https://indian-coffee.netlify.app/'
+              link='https://indiancoffee.fr/'
             />
           </>
         )}
